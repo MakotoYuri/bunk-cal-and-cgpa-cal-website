@@ -440,6 +440,53 @@ body::before {
 .feature-item .feat-icon { font-size: 1.5rem; margin-bottom: 0.35rem; }
 .feature-item .feat-label { font-size: var(--fs-small); font-weight: 600; color: var(--text); }
 
+/* About SEO Content */
+.about-seo-content {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.about-seo-content h3 {
+  font-size: var(--fs-body);
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+.about-seo-content h3:first-child {
+  margin-top: 0;
+}
+.about-seo-content p {
+  font-size: var(--fs-small);
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+.about-seo-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.about-seo-content li {
+  font-size: var(--fs-small);
+  color: var(--text-dim);
+  line-height: 1.6;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.about-seo-content li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: 700;
+}
+.about-seo-content strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* --- 10. FOOTER --- */
 .app-footer {
   text-align: center;
