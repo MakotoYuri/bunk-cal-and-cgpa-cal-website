@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/icons/
+
+Sitemap: https://yourdomain.com/sitemap.xml

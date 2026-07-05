@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-color="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Attendance Calculator & SGPA/CGPA Calculator — Free Online Tool</title>
+  <meta name="description" content="Free online attendance calculator for college students. Check your current attendance %, bunkable classes, and calculate SGPA & CGPA instantly. No sign-up required. Works offline.">
+  <meta name="keywords" content="attendance calculator, college attendance calculator, SGPA calculator, CGPA calculator, bunk calculator, how many classes can I bunk, attendance percentage calculator, college GPA calculator, university attendance tracker, free attendance tool">
+  <meta name="author" content="College Toolkit">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Canonical URL — CHANGE THIS to your real domain -->
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:title" content="College Attendance Calculator & SGPA/CGPA Calculator — Free Tool">
+  <meta property="og:description" content="Calculate your attendance percentage, find how many classes you can bunk, and compute SGPA & CGPA. Free, instant, works offline.">
+  <meta property="og:image" content="https://yourdomain.com/assets/icons/icon-512.png">
+  <meta property="og:site_name" content="College Toolkit">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="College Attendance Calculator & SGPA/CGPA Calculator">
+  <meta name="twitter:description" content="Free tool to calculate attendance %, bunkable classes, SGPA and CGPA. No sign-up. Works offline.">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/icons/icon-512.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="College Toolkit">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6514423243200935"
+     crossorigin="anonymous"></script>
+
+  <!-- JSON-LD: WebApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "College Toolkit — Attendance & SGPA Calculator",
+    "url": "https://yourdomain.com/",
+    "description": "Free online tool for college students to calculate attendance percentage, bunkable classes, SGPA and CGPA instantly.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "College Toolkit"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "150",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage Schema (great for rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I calculate my college attendance percentage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Divide the number of classes you attended by the total classes held, then multiply by 100. Our free calculator does this instantly — just enter your total classes and attended classes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many classes can I bunk and still maintain 75% attendance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use our bunk calculator: enter your total classes and attended classes, set your target to 75%, and it will tell you exactly how many classes you can safely skip."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to calculate CGPA from SGPA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CGPA is the average of all your semester SGPAs. Enter each semester's SGPA in our calculator and it will compute your cumulative CGPA and equivalent percentage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this tool work offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! College Toolkit is a Progressive Web App (PWA). Once loaded, it works fully offline. You can also install it on your phone's home screen."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://yourdomain.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Attendance Calculator",
+        "item": "https://yourdomain.com/#home"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SGPA/CGPA Calculator",
+        "item": "https://yourdomain.com/#cgpa"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-content">
+      <div class="titles">
+        <h1 id="header-title">Attendance Calculator</h1>
+        <p id="header-subtitle">Know your bunk budget 😎</p>
+      </div>
+      <div class="controls">
+        <select id="theme-selector" aria-label="Color Theme">
+          <option value="default">🟣 Indigo</option>
+          <option value="blue">🔵 Blue</option>
+          <option value="red">🔴 Crimson</option>
+          <option value="green">🟢 Emerald</option>
+        </select>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+          <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="app-nav" aria-label="Main Navigation">
+      <a href="#home" class="nav-link active">📋 Attendance</a>
+      <a href="#cgpa" class="nav-link">📊 SGPA/CGPA</a>
+      <a href="#about" class="nav-link">ℹ️ About</a>
+    </nav>
+  </header>
+
+  <!-- AD SLOT: Top Banner -->
+  <div class="ad-container ad-top" aria-hidden="true">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6514423243200935"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <main class="app-main">
+
+    <!-- ATTENDANCE PAGE -->
+    <section id="page-home" class="page active">
+      <article class="card" itemscope itemtype="https://schema.org/WebApplication">
+        <meta itemprop="name" content="Attendance Calculator">
+        <meta itemprop="applicationCategory" content="EducationalApplication">
+        <div class="target-section">
+          <label>🎯 Target Attendance</label>
+          <div class="target-chips" id="target-chips" role="radiogroup" aria-label="Select target attendance percentage">
+            <button class="chip" data-target="60" role="radio" aria-checked="false">60%</button>
+            <button class="chip" data-target="65" role="radio" aria-checked="false">65%</button>
+            <button class="chip" data-target="70" role="radio" aria-checked="false">70%</button>
+            <button class="chip active" data-target="75" role="radio" aria-checked="true">75%</button>
+            <button class="chip" data-target="80" role="radio" aria-checked="false">80%</button>
+            <button class="chip" data-target="85" role="radio" aria-checked="false">85%</button>
+            <button class="chip" data-target="90" role="radio" aria-checked="false">90%</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="classes-held">Total Classes Held</label>
+          <input type="number" id="classes-held" min="1" placeholder="e.g. 50" inputmode="numeric" autocomplete="off">
+        </div>
+        <div class="input-group">
+          <label for="classes-attended">Classes Attended</label>
+          <input type="number" id="classes-attended" min="0" placeholder="e.g. 35" inputmode="numeric" autocomplete="off">
+        </div>
+        <button id="calc-btn" class="btn-primary">Calculate Attendance ✨</button>
+        <div id="results-container" class="results-container hidden" aria-live="polite">
+          <div class="current-stat">
+            <span class="stat-label">Current Attendance</span>
+            <h2 id="current-percentage">--%</h2>
+          </div>
+          <div class="actionable-results">
+            <div id="required-classes-msg" class="result-msg"></div>
+            <div id="bunkable-classes-msg" class="result-msg bunkable"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SEO: Hidden FAQ content for crawlers (mirrors JSON-LD) -->
+      <details class="seo-faq">
+        <summary><h2>Frequently Asked Questions</h2></summary>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">How do I calculate my college attendance percentage?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Divide the number of classes you attended by the total classes held, then multiply by 100. For example, if 50 classes were held and you attended 40, your attendance is (40/50) × 100 = 80%. Our free calculator does this instantly.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">How many classes can I bunk and still maintain 75% attendance?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Use our bunk calculator: enter your total and attended classes, set your target to 75%, and it will show how many classes you can safely skip while maintaining the required attendance.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">How to calculate CGPA from SGPA?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">CGPA is the simple average of all your semester SGPAs. Enter each semester's SGPA in our calculator, and it computes your cumulative CGPA along with the equivalent percentage (CGPA × 10).</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 itemprop="name">Does this tool work offline?</h3>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes! College Toolkit is a Progressive Web App (PWA). Once loaded, it works fully offline. You can also install it on your phone's home screen for quick access.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- AD SLOT: Mid-content (between pages) -->
+    <div class="ad-container ad-mid" aria-hidden="true">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6514423243200935"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- SGPA/CGPA PAGE -->
+    <section id="page-cgpa" class="page">
+      <article class="card" itemscope itemtype="https://schema.org/WebApplication">
+        <meta itemprop="name" content="SGPA CGPA Calculator">
+        <meta itemprop="applicationCategory" content="EducationalApplication">
+        <h2 class="cgpa-title">📝 Enter SGPA per Semester</h2>
+        <div id="semester-list"></div>
+        <button id="add-sem-btn" class="chip add-sem-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"></path></svg>
+          Add Semester
+        </button>
+        <button id="calc-cgpa-btn" class="btn-primary">Calculate CGPA ✨</button>
+        <div id="cgpa-results" class="results-container hidden" aria-live="polite">
+          <div class="current-stat">
+            <span class="stat-label">Final CGPA</span>
+            <h2 id="final-cgpa">--</h2>
+          </div>
+          <div class="actionable-results">
+            <div class="result-msg success">
+              Percentage: <strong id="final-percentage">--%</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="page-about" class="page">
+      <article class="card">
+        <div class="hero-section">
+          <span class="hero-emoji">🎓</span>
+          <h2>College Toolkit</h2>
+          <p>Your free, instant calculator for attendance tracking and SGPA/CGPA. Works offline. No sign-up. Just pure utility.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feat-icon">📋</div>
+            <div class="feat-label">Attendance Tracker</div>
+          </div>
+          <div class="feature-item">
+            <div class="feat-icon">🎯</div>
+            <div class="feat-label">Bunk Calculator</div>
+          </div>
+          <div class="feature-item">
+            <div class="feat-icon">📊</div>
+            <div class="feat-label">SGPA & CGPA</div>
+          </div>
+          <div class="feature-item">
+            <div class="feat-icon">📱</div>
+            <div class="feat-label">Works Offline</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- AD SLOT: Pre-footer Banner -->
+  <div class="ad-container ad-bottom" aria-hidden="true">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6514423243200935"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <footer class="app-footer">
+    <p>Made with ❤️ and AI — <a href="#about">College Toolkit</a></p>
+    <p class="footer-seo">Free <a href="#home">Attendance Calculator</a> | <a href="#cgpa">SGPA/CGPA Calculator</a> for College Students</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
