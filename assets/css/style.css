@@ -180,13 +180,16 @@ body::before {
 .app-main {
   flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 1.5rem 1rem 3rem;
+  width: 100%;
 }
 .page {
   display: none;
   width: 100%;
   max-width: 520px;
+  margin: 0 auto;
   animation: slideUp 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .page.active { display: block; }
@@ -485,7 +488,8 @@ body::before {
 
 /* --- 12. AD CONTAINERS --- */
 .ad-container {
-  max-width: 680px;
+  width: 100%;
+  max-width: 520px;
   margin: 0 auto;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -498,6 +502,7 @@ body::before {
   overflow: hidden;
 }
 .ad-top {
+  max-width: 680px;
   padding-top: 0.75rem;
   padding-bottom: 0;
 }
@@ -578,4 +583,249 @@ body::before {
 }
 .footer-seo a:hover {
   text-decoration: underline;
+}
+
+/* ============================================
+   15. RESPONSIVE — TABLET (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .header-content {
+    max-width: 100%;
+    padding: 0 0.25rem;
+  }
+  .app-nav {
+    max-width: 100%;
+  }
+  .page {
+    max-width: 100%;
+  }
+  .card {
+    padding: 1.5rem 1.25rem;
+  }
+  .seo-faq {
+    max-width: 100%;
+  }
+  .ad-container {
+    max-width: 100%;
+  }
+  .feature-grid {
+    gap: 0.6rem;
+  }
+}
+
+/* ============================================
+   16. RESPONSIVE — SMALL TABLET (≤640px)
+   ============================================ */
+@media (max-width: 640px) {
+  .app-header {
+    padding: 1rem 1rem 0;
+  }
+  .titles h1 {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+  .app-main {
+    padding: 1.25rem 0.75rem 2.5rem;
+  }
+  .card {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-sm);
+  }
+  .btn-primary {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+  .current-stat h2 {
+    font-size: clamp(2rem, 7vw, 2.8rem);
+  }
+  .seo-faq {
+    border-radius: var(--radius-sm);
+  }
+  .seo-faq summary {
+    padding: 0.85rem 1.15rem;
+  }
+  .faq-item {
+    padding: 0.85rem 1.15rem;
+  }
+}
+
+/* ============================================
+   17. RESPONSIVE — MOBILE (≤480px)
+   ============================================ */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+  .app-header {
+    padding: 0.75rem 0.75rem 0;
+  }
+  .header-content {
+    gap: 0.5rem;
+  }
+  .titles h1 {
+    font-size: clamp(1.15rem, 5.5vw, 1.5rem);
+  }
+  .titles p {
+    font-size: 0.75rem;
+  }
+  .controls select {
+    padding: 0.3rem 0.45rem;
+    font-size: 0.75rem;
+  }
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .icon-btn svg {
+    width: 17px;
+    height: 17px;
+  }
+  .nav-link {
+    font-size: 0.72rem;
+    padding: 0.6rem 0.3rem;
+  }
+  .app-main {
+    padding: 1rem 0.6rem 2rem;
+  }
+  .card {
+    padding: 1.15rem 0.85rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05), 0 0 0 1px var(--border);
+  }
+  .card:hover {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05), 0 0 0 1px var(--border);
+  }
+  .target-section > label {
+    font-size: 0.78rem;
+  }
+  .target-chips {
+    gap: 0.3rem;
+  }
+  .chip {
+    padding: 0.38rem 0.7rem;
+    font-size: 0.75rem;
+  }
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  .input-group label {
+    font-size: 0.78rem;
+  }
+  .input-group input {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+  .btn-primary {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    border-radius: 50px;
+  }
+  .current-stat h2 {
+    font-size: clamp(1.8rem, 10vw, 2.5rem);
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+  }
+  .result-msg {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.88rem;
+    border-radius: 10px;
+  }
+  .cgpa-title {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+    margin-bottom: 1rem;
+  }
+  .sem-row {
+    gap: 0.45rem;
+  }
+  .add-sem-btn {
+    margin-bottom: 1rem;
+    font-size: 0.78rem;
+  }
+  .hero-section {
+    padding: 1rem 0;
+  }
+  .hero-section .hero-emoji {
+    font-size: 2.2rem;
+  }
+  .hero-section h2 {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+  }
+  .hero-section p {
+    font-size: 0.88rem;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .feature-item {
+    padding: 0.75rem 0.5rem;
+    border-radius: 10px;
+  }
+  .feature-item .feat-icon {
+    font-size: 1.25rem;
+  }
+  .feature-item .feat-label {
+    font-size: 0.72rem;
+  }
+  .app-footer {
+    padding: 1.25rem 0.75rem;
+    font-size: 0.72rem;
+  }
+  .footer-seo {
+    font-size: 0.65rem;
+  }
+  .seo-faq {
+    border-radius: 14px;
+    margin-top: 1rem;
+  }
+  .seo-faq summary {
+    padding: 0.75rem 1rem;
+  }
+  .seo-faq summary h2 {
+    font-size: 0.88rem;
+  }
+  .faq-item {
+    padding: 0.75rem 1rem;
+  }
+  .faq-item h3 {
+    font-size: 0.88rem;
+  }
+  .faq-item p {
+    font-size: 0.75rem;
+  }
+  .ad-container {
+    padding: 0.35rem 0.6rem;
+    min-height: 40px;
+  }
+  .toast {
+    font-size: 0.75rem;
+    padding: 0.6rem 1.2rem;
+    bottom: 1rem;
+  }
+}
+
+/* ============================================
+   18. RESPONSIVE — VERY SMALL (≤360px)
+   ============================================ */
+@media (max-width: 360px) {
+  .titles h1 {
+    font-size: 1.1rem;
+  }
+  .nav-link {
+    font-size: 0.65rem;
+    padding: 0.55rem 0.2rem;
+  }
+  .chip {
+    padding: 0.32rem 0.55rem;
+    font-size: 0.7rem;
+  }
+  .card {
+    padding: 1rem 0.75rem;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
